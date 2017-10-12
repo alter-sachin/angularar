@@ -1,0 +1,18 @@
+<form (ngSubmit)="addIngredientForm.form.valid && submit()" name="addIngredient"  #addIngredientForm="ngForm" novalidate>
+
+  <div class="form-group" [ngClass]="{ 'has-error': addIngredientForm.submitted && !name.valid }">
+    <input placeholder="Name Of Ingredient" class="form-control"
+           name="name" [(ngModel)]="newIngredient.name" #name="ngModel" required />
+    <div *ngIf="addIngredientForm.submitted && !name.valid" class="help-block">Name is required</div>
+  </div>
+
+  <div class="form-group" [ngClass]="{ 'has-error': addIngredientForm.submitted && !description.valid }">
+    <input placeholder="Description" class="form-control"
+           name="description" [(ngModel)]="newIngredient.description" #description="ngModel" required />
+    <div *ngIf="addIngredientForm.submitted && !description.valid" class="help-block">Description is required</div>
+  </div>
+
+  <button [disabled]="!addIngredientForm.form.valid"> Add </button>
+
+  <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+</form>
