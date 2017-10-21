@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
-import {Headers, Http} from "@angular/http";
-import {Ingredient} from "./_models/ingredient";
-import {environment} from "../environments/environment";
+import {Injectable} from '@angular/core';
+import {Headers, Http} from '@angular/http';
+import {Ingredient} from './_models/ingredient';
+import {environment} from '../environments/environment';
 
 import 'rxjs/add/operator/toPromise';
 
@@ -9,17 +9,16 @@ import 'rxjs/add/operator/toPromise';
 export class IngredientService {
 
   getIngredients(): Promise<any> {
-    return this.http.get(environment.backendUrl+ 'ingredient').
-      toPromise()
+    return this.http.get(environment.backendUrl + 'ingredient').toPromise()
       .then(response => response.json() as any)
       .catch(this.handleError);
   }
 
   saveIngredient(ingredient: Ingredient): Promise<any> {
-    let headers = new Headers();
+    const headers = new Headers();
     headers.append('Accept', 'application/json');
     headers.append('Content-Type', 'application/json');
-    return this.http.post(environment.backendUrl+ 'ingredient', ingredient, {headers: headers})
+    return this.http.post(environment.backendUrl + 'ingredient', ingredient, {headers: headers})
       .toPromise()
       .then(response => response.json as any)
       .catch(this.handleError);
@@ -30,6 +29,7 @@ export class IngredientService {
     return Promise.reject(error.message || error);
   }
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {
+  }
 
 }

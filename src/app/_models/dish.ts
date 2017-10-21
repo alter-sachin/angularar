@@ -1,7 +1,6 @@
-export class FoodItem {
+export class Dish {
   name: String;
   price: Number;
   description: String;
-  image: String;
   createDate: Date;
 }
