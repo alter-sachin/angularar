@@ -10,16 +10,17 @@ import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 import {IngredientService} from './ingredient.service';
 import {HttpModule} from '@angular/http';
-import {GeodataComponent} from './geodata/geodata.component';
+import {GeoDataComponent} from './geodata/geodata.component';
 import {UserComponent} from './user/user.component';
 import {UserService} from './user.service';
 import {GeodataService} from './geodata.service';
 import {FoodItemService} from './fooditem.service';
-import { ArComponent } from './ar/ar.component';
-import { SoundcloudComponent } from './soundcloud/soundcloud.component';
-import { YoutubeComponent } from './youtube/youtube.component';
-import {AuthGuard} from "./_guards/auth.guard";
-import {AuthService} from "./auth.service";
+import {ArComponent} from './ar/ar.component';
+import {SoundcloudComponent} from './soundcloud/soundcloud.component';
+import {YoutubeComponent} from './youtube/youtube.component';
+import {AuthGuard} from './_guards/auth.guard';
+import {AuthService} from './auth.service';
+import {SoundCloudService} from './soundcloud.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import {AuthService} from "./auth.service";
     RestaurantComponent,
     FooditemComponent,
     IngredientComponent,
-    GeodataComponent,
+    GeoDataComponent,
     UserComponent,
     ArComponent,
     SoundcloudComponent,
@@ -47,7 +48,8 @@ import {AuthService} from "./auth.service";
     GeodataService,
     FoodItemService,
     AuthGuard,
-    AuthService
+    AuthService,
+    SoundCloudService
   ],
   bootstrap: [AppComponent]
 })

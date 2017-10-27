@@ -1,3 +1,28 @@
-<p>
-  soundcloud works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <div class="pull-left">
+        <a class="navbar-brand" href="#">ProgHackers</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <form class="form-horizontal" (ngSubmit)="searchSongForm.form.valid && search()" name="searchSongForm"
+          #searchSongForm="ngForm" novalidate>
+
+      <div class="form-group" [ngClass]="{ 'has-error': searchSongForm.submitted && !name.valid }">
+        <input placeholder="Type Song Name ..." class="form-control"
+               name="query" [(ngModel)]="query" #name="ngModel" required/>
+        <div *ngIf="searchSongForm.submitted && !name.valid" class="help-block">Search Query is required</div>
+      </div>
+
+      <button [disabled]="!searchSongForm.form.valid"> Search</button>
+
+      <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+    </form>
+  </div>
+  <div *ngFor="let track of searchedTracks">
+    <span>{{track.title}}</span>
+    <button (click)="download(track); $event.stopPropagation()">Download</button>
+  </div>
+</div>

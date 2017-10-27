@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeodataComponent } from './geodata.component';
+import { GeoDataComponent } from './geodata.component';
 
-describe('GeodataComponent', () => {
-  let component: GeodataComponent;
-  let fixture: ComponentFixture<GeodataComponent>;
+describe('GeoDataComponent', () => {
+  let component: GeoDataComponent;
+  let fixture: ComponentFixture<GeoDataComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GeodataComponent ]
+      declarations: [ GeoDataComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GeodataComponent);
+    fixture = TestBed.createComponent(GeoDataComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

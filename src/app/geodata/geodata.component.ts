@@ -7,7 +7,7 @@ import {GeodataService} from "../geodata.service";
   templateUrl: './geodata.component.html',
   styleUrls: ['./geodata.component.css']
 })
-export class GeodataComponent implements OnInit {
+export class GeoDataComponent implements OnInit {
 
   error = '';
   newGeoData: GeoData = new GeoData();
@@ -20,7 +20,7 @@ export class GeodataComponent implements OnInit {
   submit() {
     this.geoDataService.saveGeoData(this.newGeoData).then(response => {
       console.log(response);
-    })
+    });
   }
 
 }
