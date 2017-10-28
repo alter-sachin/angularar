@@ -1,3 +1,8 @@
-<p>
-  ar works!
-</p>
+<a-scene embedded artoolkit='sourceType: webcam;'>
+  <a-marker preset='hiro'>
+    <a-entity id="donut" rotation="0 0 0 " position="0 0 0 " scale="0.004 0.004 0.004 "
+              gltf-model-next="src: url(/assets/1/scene.gltf); " drag-rotate-component></a-entity>
+
+  </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
