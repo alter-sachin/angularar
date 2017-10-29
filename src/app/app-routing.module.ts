@@ -5,11 +5,12 @@ import {SoundCloudComponent} from './soundcloud/soundcloud.component';
 import {ArComponent} from './ar/ar.component';
 import {RestaurantComponent} from './restaurant/restaurant.component';
 import {RestaurantDetailComponent} from './restaurantdetail/restaurantdetail.component';
+import {HomeComponent} from './home/home.component';
 
 const ROUTES: Routes = [
-  {path: '', redirectTo: '/search', pathMatch: 'full'},
-  {path: '/search', component: RestaurantComponent},
-  {path: '/restaurant/:id', component: RestaurantDetailComponent},
+  {path: '', component: HomeComponent},
+  {path: 'search', component: RestaurantComponent},
+  {path: 'restaurants/:id', component: RestaurantDetailComponent},
   {path: 'ingredient', component: IngredientComponent},
   {path: 'soundcloud', component: SoundCloudComponent},
   {path: 'ar', component: ArComponent}
