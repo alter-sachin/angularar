@@ -1,6 +1,10 @@
+import {Dish} from './dish';
+
 export class Restaurant {
+  id: number;
   name: String;
   address: String;
-  phone: String;
+  phoneNumbers: String[];
+  menu: Dish[];
   createDate: Date;
 }

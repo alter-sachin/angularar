@@ -1,8 +1,16 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+import {environment} from '../environments/environment';
+import {HttpService} from './http.service';
 
 @Injectable()
 export class RestaurantService {
 
-  constructor() { }
+  getRestaurants(): Promise<any> {
+    const url = environment.backendUrl + 'restaurants';
+    return this.httpService.getRequest(url);
+  }
+
+  constructor(private httpService: HttpService) {
+  }
 
 }

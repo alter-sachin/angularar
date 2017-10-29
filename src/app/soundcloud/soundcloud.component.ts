@@ -20,14 +20,11 @@ export class SoundcloudComponent implements OnInit {
     this.searchedTracks = [];
     this.soundcloudService.search(this.query).then(response => {
       console.log(response);
-      const trackList = <Array<Track>>response;
-      for (const track of trackList) {
-        this.searchedTracks.push(track);
-      }
+      this.searchedTracks = <Array<Track>>response;
     });
   }
 
-  download(track: Track){
+  download(track: Track) {
     this.soundcloudService.download(track.id).then(response => {
       console.log(response);
 

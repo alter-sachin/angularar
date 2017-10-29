@@ -21,6 +21,7 @@ import {YoutubeComponent} from './youtube/youtube.component';
 import {AuthGuard} from './_guards/auth.guard';
 import {AuthService} from './auth.service';
 import {SoundCloudService} from './soundcloud.service';
+import { RestaurantDetailComponent } from './restaurantdetail/restaurantdetail.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {SoundCloudService} from './soundcloud.service';
     UserComponent,
     ArComponent,
     SoundcloudComponent,
-    YoutubeComponent
+    YoutubeComponent,
+    RestaurantDetailComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [

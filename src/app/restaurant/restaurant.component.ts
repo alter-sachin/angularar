@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {RestaurantService} from '../restaurant.service';
+import {Restaurant} from '../_models/restaurant';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-restaurant',
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantComponent implements OnInit {
 
-  constructor() { }
+  public restaurants: Restaurant[] = [];
+
+  public selectedRestaurant: Restaurant;
+
+  constructor(private restaurantService: RestaurantService,
+              private router: Router) {
+  }
 
   ngOnInit() {
+    this.restaurantService.getRestaurants().then(response => {
+      console.log(response);
+      this.restaurants = <Array<Restaurant>>response;
+    });
+  }
+
+  goToRestaurant(): void {
+    const link = ['/restaurants', this.selectedRestaurant.id];
+    this.router.navigate(link);
   }
 
 }

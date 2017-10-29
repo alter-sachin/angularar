@@ -1,3 +1,13 @@
-<p>
-  restaurant works!
-</p>
+<div class="container">
+  <form class="form-horizontal" (ngSubmit)="searchRestaurant.form.valid && goToRestaurant()" name="searchRestaurant"
+        #searchRestaurant="ngForm" novalidate>
+    <div class="form-group">
+      <select class="form-control" required [(ngModel)]="this.selectedRestaurant" name="selectedRestaurant"
+              #selectedRestaurant="ngModel">
+        <option value="none" disabled selected>Choose a restaurant</option>
+        <option *ngFor="let r of this.restaurants" [value]="r.name">{{r.name}}</option>
+      </select>
+    </div>
+    <button [disabled]="!searchRestaurant.form.valid"> Go</button>
+  </form>
+</div>
