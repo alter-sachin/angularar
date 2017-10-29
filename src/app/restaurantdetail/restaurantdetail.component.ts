@@ -20,6 +20,17 @@ export class RestaurantDetailComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.route.params.forEach((params: Params) => {
+      if (params['id'] !== undefined) {
+        const id = +params['id'];
+        this.navigated = true;
+        this.restaurantService.getRestaurant(id)
+          .then(restaurant => this.restaurant = restaurant);
+      } else {
+        this.navigated = false;
+        this.restaurant = new Restaurant();
+      }
+    });
   }
 
   goBack(): void {

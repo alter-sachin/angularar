@@ -10,6 +10,11 @@ export class RestaurantService {
     return this.httpService.getRequest(url);
   }
 
+  getRestaurant(id: number): Promise<any> {
+    const url = environment.backendUrl + 'restaurants/' + id;
+    return this.httpService.getRequest(url);
+  }
+
   constructor(private httpService: HttpService) {
   }
 

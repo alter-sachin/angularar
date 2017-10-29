@@ -7,25 +7,25 @@ import {Track} from '../_models/track';
   templateUrl: './soundcloud.component.html',
   styleUrls: ['./soundcloud.component.css']
 })
-export class SoundcloudComponent implements OnInit {
+export class SoundCloudComponent implements OnInit {
 
   error = '';
   query = '';
   public searchedTracks: Track[] = [];
 
-  constructor(private soundcloudService: SoundCloudService) {
+  constructor(private soundCloudService: SoundCloudService) {
   }
 
   search() {
     this.searchedTracks = [];
-    this.soundcloudService.search(this.query).then(response => {
+    this.soundCloudService.search(this.query).then(response => {
       console.log(response);
       this.searchedTracks = <Array<Track>>response;
     });
   }
 
   download(track: Track) {
-    this.soundcloudService.download(track.id).then(response => {
+    this.soundCloudService.download(track.id).then(response => {
       console.log(response);
 
     });

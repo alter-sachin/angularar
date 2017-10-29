@@ -16,12 +16,14 @@ import {UserService} from './user.service';
 import {GeodataService} from './geodata.service';
 import {FoodItemService} from './fooditem.service';
 import {ArComponent} from './ar/ar.component';
-import {SoundcloudComponent} from './soundcloud/soundcloud.component';
+import {SoundCloudComponent} from './soundcloud/soundcloud.component';
 import {YoutubeComponent} from './youtube/youtube.component';
 import {AuthGuard} from './_guards/auth.guard';
 import {AuthService} from './auth.service';
 import {SoundCloudService} from './soundcloud.service';
 import { RestaurantDetailComponent } from './restaurantdetail/restaurantdetail.component';
+import {RestaurantService} from './restaurant.service';
+import {HttpService} from './http.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,7 @@ import { RestaurantDetailComponent } from './restaurantdetail/restaurantdetail.c
     GeoDataComponent,
     UserComponent,
     ArComponent,
-    SoundcloudComponent,
+    SoundCloudComponent,
     YoutubeComponent,
     RestaurantDetailComponent
   ],
@@ -51,7 +53,9 @@ import { RestaurantDetailComponent } from './restaurantdetail/restaurantdetail.c
     FoodItemService,
     AuthGuard,
     AuthService,
-    SoundCloudService
+    SoundCloudService,
+    RestaurantService,
+    HttpService
   ],
   bootstrap: [AppComponent]
 })
