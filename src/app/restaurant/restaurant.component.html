@@ -2,10 +2,10 @@
   <form class="form-horizontal" (ngSubmit)="searchRestaurant.form.valid && goToRestaurant()" name="searchRestaurant"
         #searchRestaurant="ngForm" novalidate>
     <div class="form-group">
-      <select class="form-control" required [(ngModel)]="this.selectedRestaurant" name="selectedRestaurant1"
+      <select class="form-control" required [(ngModel)]="this.selectedId" name="selectedRestaurant1"
               #selectedRestaurant1="ngModel">
         <option value="none" disabled selected>Choose a restaurant</option>
-        <option *ngFor="let r of this.restaurants" [value]="r.name">{{r.name}}</option>
+        <option *ngFor="let r of this.restaurants" [value]="r.id">{{r.name}}</option>
       </select>
     </div>
     <button [disabled]="!searchRestaurant.form.valid"> Go</button>

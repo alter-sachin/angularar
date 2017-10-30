@@ -12,7 +12,7 @@ export class RestaurantComponent implements OnInit {
 
   public restaurants: Restaurant[] = [];
 
-  public selectedRestaurant: Restaurant;
+  public selectedId: number;
 
   constructor(private restaurantService: RestaurantService,
               private router: Router) {
@@ -26,7 +26,8 @@ export class RestaurantComponent implements OnInit {
   }
 
   goToRestaurant(): void {
-    const link = ['/restaurants', this.selectedRestaurant.id];
+    console.log(this.selectedId);
+    const link = ['/restaurants', this.selectedId];
     this.router.navigate(link);
   }
 
