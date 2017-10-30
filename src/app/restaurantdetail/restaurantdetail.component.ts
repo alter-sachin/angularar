@@ -1,7 +1,8 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {RestaurantService} from '../restaurant.service';
-import {ActivatedRoute, Params} from '@angular/router';
+import {ActivatedRoute, Params, Router} from '@angular/router';
 import {Restaurant} from '../_models/restaurant';
+import {Dish} from '../_models/dish';
 
 @Component({
   selector: 'app-restaurantdetail',
@@ -16,7 +17,8 @@ export class RestaurantDetailComponent implements OnInit {
   navigated = false; // true if navigated here
 
   constructor(private restaurantService: RestaurantService,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute,
+              private router: Router) {
   }
 
   ngOnInit() {
@@ -31,6 +33,11 @@ export class RestaurantDetailComponent implements OnInit {
         this.restaurant = new Restaurant();
       }
     });
+  }
+
+  goToDish(dish: Dish): void {
+    const link = ['/dishes', dish.id];
+    this.router.navigate(link);
   }
 
   goBack(): void {

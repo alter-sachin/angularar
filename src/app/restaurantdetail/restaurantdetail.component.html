@@ -1,12 +1,12 @@
 <div *ngIf="restaurant">
   <h2>{{restaurant.name}}</h2>
   <div>
-    <label>id: </label>{{restaurant.id}}
+    <label>id: </label>{{this.restaurant.id}}
   </div>
   <div *ngFor="let dish of restaurant.menu">
-    <span>{{dish.name}} , {{dish.price}}</span>
-    <div *ngFor="let ingredient of dish.ingredients">
-      <span>{{ingredient.name}}, {{ingredient.description}}</span>
+    <div>
+      <span>{{dish.name}} , {{dish.price}}</span>
+      <button (click)="goToDish(dish)">Go!</button>
     </div>
   </div>
   <button (click)="goBack()">Back</button>

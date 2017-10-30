@@ -21,9 +21,12 @@ import {YoutubeComponent} from './youtube/youtube.component';
 import {AuthGuard} from './_guards/auth.guard';
 import {AuthService} from './auth.service';
 import {SoundCloudService} from './soundcloud.service';
-import { RestaurantDetailComponent } from './restaurantdetail/restaurantdetail.component';
+import {RestaurantDetailComponent} from './restaurantdetail/restaurantdetail.component';
 import {RestaurantService} from './restaurant.service';
 import {HttpService} from './http.service';
+import {DishDetailComponent} from './dishdetail/dishdetail.component';
+import {IngredientdetailComponent} from './ingredientdetail/ingredientdetail.component';
+import {DishService} from "./dish.service";
 
 @NgModule({
   declarations: [
@@ -37,7 +40,9 @@ import {HttpService} from './http.service';
     ArComponent,
     SoundCloudComponent,
     YoutubeComponent,
-    RestaurantDetailComponent
+    RestaurantDetailComponent,
+    DishDetailComponent,
+    IngredientdetailComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
@@ -52,6 +57,7 @@ import {HttpService} from './http.service';
     GeodataService,
     FoodItemService,
     AuthGuard,
+    DishService,
     AuthService,
     SoundCloudService,
     RestaurantService,
