@@ -1,8 +1,14 @@
 <a-scene embedded artoolkit='sourceType: webcam;'>
   <a-marker preset='hiro'>
     <a-entity id="donut" rotation="0 0 0 " position="0 0 0 " scale="0.004 0.004 0.004 "
-              gltf-model-next="src: url(https://s3.ap-south-1.amazonaws.com/proghackersarmodels/restaurant_sample_donut_v1/scene.gltf); " drag-rotate-component></a-entity>
+              gltf-model-next="src: url( {{dish.modelLocation}} ); "
+              drag-rotate-component></a-entity>
+    <a-entity id="opacity" position="-1.5 1.55 0" scale=" 1 .85 1 "
+              text="color:white;anchor:left; width: 4.5;value:{{dish.description}}">
 
+      <a-animation attribute="rotation" from="0 10 0" to="0 200 0" delay="1250" dur="1500">
+      </a-animation>
+    </a-entity>
   </a-marker>
   <a-entity camera></a-entity>
 </a-scene>
