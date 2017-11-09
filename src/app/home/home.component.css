@@ -581,7 +581,7 @@ Hero
   position: relative;
   padding: 60px 0 60px 0;
   min-height: 800px;
-  background: rgb(40, 70, 102) url('../img/123.png') no-repeat center center;
+  background: rgb(40, 70, 102) url('../../assets/img/123.png') no-repeat center center;
   background-size: cover;
   color: #fff;
 }
@@ -658,7 +658,7 @@ Features Slider
 .features-bg {
   position: relative;
   min-height: 400px;
-  background: url('../img/features-intro-01.jpg') no-repeat center center;
+  background: url('../../assets/img/features-intro-01.jpg') no-repeat center center;
   background-size: cover;
 }
 .features-img {
@@ -776,7 +776,7 @@ blockquote .logo-quote {
 Showcase
 ========================================================================== */
 .showcase {
-  background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
+  /*background: url('../../assets/img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;*/
   background-size: cover;
 }
 .showcase h1 {
@@ -795,7 +795,7 @@ Showcase
   left: 20%;
   min-height: 676px;
   width: 359px;
-  background: url('../img/iphone-skeleton.png') no-repeat center center;
+  background: url('../../assets/img/iphone-skeleton.png') no-repeat center center;
 }
 .device-content {
   position: absolute;
@@ -1132,7 +1132,7 @@ Waypoints
 
 /* Preload images */
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  /*content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);*/
   display: none;
 }
 
@@ -1211,7 +1211,7 @@ body:after {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../img/loading.gif) no-repeat;
+  /*background: url(../img/loading.gif) no-repeat;*/
 }
 
 .lb-nav {
@@ -1242,7 +1242,7 @@ body:after {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../img/prev.png) left 48% no-repeat;
+  /*background: url(../img/prev.png) left 48% no-repeat;*/
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -1260,7 +1260,7 @@ body:after {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../img/next.png) right 48% no-repeat;
+  /*background: url('../../assets/img/next.png') right 48% no-repeat;*/
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -1324,7 +1324,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../img/close.png) top right no-repeat;
+  /*background: url('../../assets/img/close.png') top right no-repeat;*/
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -1419,7 +1419,7 @@ body:after {
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-  background-image: url('../img/fancybox_sprite.png');
+  background-image: url('../../assets/img/fancybox_sprite.png');
 }
 
 #fancybox-loading {
@@ -1437,7 +1437,7 @@ body:after {
 #fancybox-loading div {
   width: 44px;
   height: 44px;
-  background: url('../img/fancybox_loading.gif') center center no-repeat;
+  background: url('../../assets/img/fancybox_loading.gif') center center no-repeat;
 }
 
 .fancybox-close {
@@ -1457,7 +1457,7 @@ body:after {
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  background: transparent url('blank.gif'); /* helps IE */
+  background: transparent url('../../assets/img/blank.gif'); /* helps IE */
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   z-index: 8040;
 }
@@ -1527,7 +1527,7 @@ body:after {
   overflow: hidden;
   display: none;
   z-index: 8000;
-  background: url('../img/fancybox_overlay.png');
+  background: url('../../assets/img/fancybox_overlay.png');
 }
 
 .fancybox-overlay-fixed {
@@ -1606,12 +1606,12 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5){
 
   #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-    background-image: url('../img/fancybox_sprite@2x.png');
+    background-image: url('../../assets/img/fancybox_sprite@2x.png');
     background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
   }
 
   #fancybox-loading div {
-    background-image: url('../img/fancybox_loading@2x.gif');
+    background-image: url('../../assets/img/fancybox_loading@2x.gif');
     background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
   }
 }

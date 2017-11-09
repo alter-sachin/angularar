@@ -6,9 +6,10 @@ import {ArComponent} from './ar/ar.component';
 import {RestaurantComponent} from './restaurant/restaurant.component';
 import {RestaurantDetailComponent} from './restaurantdetail/restaurantdetail.component';
 import {DishDetailComponent} from './dishdetail/dishdetail.component';
+import {HomeComponent} from './home/home.component';
 
 const ROUTES: Routes = [
-  {path: '', redirectTo: 'search', pathMatch: 'full'},
+  {path: '', component: HomeComponent},
   {path: 'search', component: RestaurantComponent},
   {path: 'restaurants/:id', component: RestaurantDetailComponent},
   {path: 'dishes/:id', component: DishDetailComponent},
