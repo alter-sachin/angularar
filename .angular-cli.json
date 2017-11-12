@@ -31,7 +31,8 @@
         "./assets/js/min/scripts-min.js",
         "./assets/js/flickity.pkgd.min.js",
         "./assets/js/jquery.fancybox.pack.js",
-        "./assets/js/retina.js"
+        "./assets/js/retina.js",
+        "./assets/js/default.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
