@@ -129,130 +129,29 @@
     <li onclick="displaySub()">
       <a href="#">
         <span class="cbp-ig-icon"><img src="../../assets/img/mains.png"/></span>
-        <h3 class="cbp-ig-title ">Mains</h3>
+        <h3 class="cbp-ig-title ">Menu</h3>
       </a>
-      <span class="cbp-ig-category ">Filling Specials
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
+      <span class="cbp-ig-category ">Super Delicious 3D Stuff
+      <ul class="sub_menu" *ngFor="let dish of restaurant.menu">
+        <li><a href=""><span class="dish_name">{{dish.name}}</span><span class="price"> {{dish.price}}</span></a></li>
       </ul>
       </span>
 
     </li>
-    <li onclick="displaySub()">
-      <a href="#">
-        <span class="cbp-ig-icon"><img src="../../assets/img/desserts.png"/></span>
-        <h3 class="cbp-ig-title ">Desserts</h3>
-      </a>
-      <span class="cbp-ig-category ">Sweet Tooth
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
-      </ul>
-      </span>
-    </li>
-    <li onclick="displaySub()">
-      <a href="#">
-        <span class="cbp-ig-icon"><img src="../../assets/img/meals.png"/></span>
-        <h3 class="cbp-ig-title ">Meals</h3>
-      </a>
-      <span class="cbp-ig-category ">Everything at once
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
-      </ul>
-      </span>
-    </li>
-    <li onclick="displaySub()">
-      <a href="#">
-        <span class="cbp-ig-icon"><img src="../../assets/img/wonton.png"/></span>
-        <h3 class="cbp-ig-title ">Wontons</h3>
-      </a>
-      <span class="cbp-ig-category ">Juicy Fills
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
-      </ul>
-      </span>
-    </li>
-    <li onclick="displaySub()">
-      <a href="# ">
-        <span class="cbp-ig-icon"><img src="../../assets/img/chinese.png"/></span>
-        <h3 class="cbp-ig-title ">Chinese</h3>
-      </a>
-      <span class="cbp-ig-category ">Authentic
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
-      </ul>
-      </span>
-    </li>
-    <li onclick="displaySub()">
-      <a href="# ">
-        <span class="cbp-ig-icon"><img src="../../assets/img/top.png"/></span>
-        <h3 class="cbp-ig-title ">Best Selling</h3>
-      </a>
-      <span class="cbp-ig-category ">Favourites
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
-      </ul>
-      </span>
-    </li>
-    <li onclick="displaySub()">
-      <a href="#">
-        <span class="cbp-ig-icon"><img src="../../assets/img/mains.png"/></span>
-        <h3 class="cbp-ig-title ">Mains</h3>
-      </a>
-      <span class="cbp-ig-category ">Filling Specials
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
-      </ul>
-      </span>
-    </li>
-    <li onclick="displaySub()">
-      <a href="# ">
-        <span class="cbp-ig-icon"><img src="../../assets/img/desserts.png"/></span>
-        <h3 class="cbp-ig-title ">Desserts</h3>
-      </a>
-      <span class="cbp-ig-category ">Sweet Tooth
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
-      </ul>
-      </span>
-    </li>
-    <li onclick="displaySub()">
-      <a href="#">
-        <span class="cbp-ig-icon"><img src="../../assets/img/meals.png"/></span>
-        <h3 class="cbp-ig-title ">Meals</h3>
-      </a>
-      <span class="cbp-ig-category ">Everything at once
-      <ul class="sub_menu">
-        <li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>
-        <li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>
-      </ul>
-      </span>
-    </li>
+    <!--<li onclick="displaySub()">-->
+    <!--<a href="#">-->
+    <!--<span class="cbp-ig-icon"><img src="../../assets/img/meals.png"/></span>-->
+    <!--<h3 class="cbp-ig-title ">Meals</h3>-->
+    <!--</a>-->
+    <!--<span class="cbp-ig-category ">Everything at once-->
+    <!--<ul class="sub_menu">-->
+    <!--<li><a href=""><span class="dish_name">Sub1</span><span class="price">₹20</span></a></li>-->
+    <!--<li><a href=""><span class="dish_name">Sub2</span><span class="price">₹20</span></a></li>-->
+    <!--<li><a href=""><span class="dish_name">Sub3</span><span class="price">₹20</span></a></li>-->
+    <!--<li><a href=""><span class="dish_name">Sub4</span><span class="price">₹20</span></a></li>-->
+    <!--</ul>-->
+    <!--</span>-->
+    <!--</li>-->
   </ul>
 </div>
 <script src="../../assets/js/classie.js"></script>
