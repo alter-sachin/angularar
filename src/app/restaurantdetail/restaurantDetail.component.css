@@ -1,3 +1,9 @@
+body{
+  max-height: 100vh !important;
+    overflow: hidden;
+}
+
+
 .error_bar {
   position: absolute;
   top: 0;
