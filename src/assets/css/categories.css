@@ -210,11 +210,11 @@ span#dish_name{
     float: left;
     padding: 1em 2em;
     font-weight: bolder;
-    font-family: 'Lato';
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 span#price{
     float: right;
     padding: 1em 2em;
-    font-family: 'Lato';
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }

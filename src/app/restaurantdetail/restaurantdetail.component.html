@@ -135,7 +135,7 @@
       </a>
       <span class="cbp-ig-category ">Super Delicious 3D Stuff
       <ul class="sub_menu" *ngFor="let dish of restaurant.menu">
-        <li><button (click)="loadDish(dish)"><span class="dish_name">{{dish.name}}</span><span class="price"> {{dish.price}}</span></button></li>
+        <li><span (click)="loadDish(dish)"><span class="dish_name">{{dish.name}}</span><span class="price"> {{dish.price}}</span></span></li>
       </ul>
       </span>
 
