@@ -131,13 +131,20 @@
     <li onclick="displaySub()">
       <a href="#">
         <span class="cbp-ig-icon"><img src="../../assets/img/mains.png"/></span>
-        <h3 class="cbp-ig-title ">Menu</h3>
+        <h3 class="cbp-ig-title ">Mains</h3>
+        <span class="cbp-ig-category ">Filling Specials</span>
       </a>
-      <span class="cbp-ig-category ">Super Delicious 3D Stuff
       <ul class="sub_menu" *ngFor="let dish of restaurant.menu">
-        <li><span (click)="loadDish(dish)"><span class="dish_name">{{dish.name}}</span><span class="price"> {{dish.price}}</span></span></li>
+        <li>
+        <a href>
+          <span (click)="loadDish(dish)">
+            <span class="dish_name">{{dish.name}}</span>
+            <span class="price"> {{dish.price}}</span>
+          </span>
+        </a>
+        </li>
       </ul>
-      </span>
+      
 
     </li>
     <!--<li onclick="displaySub()">-->

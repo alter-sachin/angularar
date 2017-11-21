@@ -10,6 +10,12 @@
 
 }
 
+
+body{
+  max-height: 100vh !important;
+  overflow: hidden;
+}
+
 #error_messages {
   position: relative;
   /*top: 50%;
@@ -582,16 +588,14 @@ img {
   box-shadow: none !important;
 }
 
-span#dish_name {
+span.dish_name {
   float: left;
-  padding: 1em 2em;
   font-weight: bolder;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-family: 'Lato';*/
 }
 
-span#price {
+span.price {
   float: right;
-  padding: 1em 2em;
   font-family: 'Lato';
 }
 
