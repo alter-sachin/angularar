@@ -27,6 +27,7 @@ import {HttpService} from './http.service';
 import {DishDetailComponent} from './dishdetail/dishdetail.component';
 import {IngredientdetailComponent} from './ingredientdetail/ingredientdetail.component';
 import {DishService} from "./dish.service";
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import {DishService} from "./dish.service";
     YoutubeComponent,
     RestaurantDetailComponent,
     DishDetailComponent,
-    IngredientdetailComponent
+    IngredientdetailComponent,
+    CartComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
