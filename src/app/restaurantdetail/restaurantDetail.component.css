@@ -1,7 +1,3 @@
-#arjsDebugUIContainer {
-  display: none;
-}
-
 .error_bar {
   position: absolute;
   top: 0;
@@ -12,6 +8,12 @@
   left: 50%;
   color: white;
 
+}
+
+
+body{
+  max-height: 100vh !important;
+  overflow: hidden;
 }
 
 #error_messages {
@@ -40,6 +42,7 @@
   -moz-box-shadow: 0px -3px 11px 1px rgba(50, 50, 50, 0.38);
   box-shadow: 0px -3px 11px 1px rgba(50, 50, 50, 0.38);
   display: none;
+  overflow: hidden;
 
 }
 
@@ -47,7 +50,7 @@
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  font-family: 'Lato', sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   /*padding: 0.1em 0em;*/
   font-size: 22px;
 
@@ -317,7 +320,7 @@ img {
 
 .checkout__summary tbody td:last-child,
 .checkout__summary .checkout__total {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .checkout__summary tbody td span {
@@ -462,7 +465,7 @@ img {
   -webkit-transition: -webkit-transform 0.2s;
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
-  font-family: "Montserrat";
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .cbp-ig-grid .cbp-ig-category {
@@ -585,22 +588,20 @@ img {
   box-shadow: none !important;
 }
 
-span#dish_name {
+span.dish_name {
   float: left;
-  padding: 1em 2em;
   font-weight: bolder;
-  font-family: 'Lato';
+  /*font-family: 'Lato';*/
 }
 
-span#price {
+span.price {
   float: right;
-  padding: 1em 2em;
   font-family: 'Lato';
 }
 
 body {
   background: #f3833a;
-  font-family: 'MisoRegular';
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 h1.main, p.demos {
@@ -1019,7 +1020,7 @@ h1.main, p.demos {
 /* General Demo Style */
 body {
   background: #f3833a;
-  font-family: 'Myriad Pro', Arial, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 15px;
 }
 
@@ -1077,7 +1078,7 @@ button {
   margin: 0 10px 0 0;
   padding: .01em .4em;
   font-size: 1em;
-  font-family: "MisoBold", serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   line-height: 1.8;
   appearance: none;
   box-shadow: none;
