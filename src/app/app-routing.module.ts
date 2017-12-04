@@ -9,13 +9,13 @@ import {DishDetailComponent} from './dishdetail/dishdetail.component';
 import {HomeComponent} from './home/home.component';
 
 const ROUTES: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'search', component: RestaurantComponent},
-  {path: 'restaurants/:id', component: RestaurantDetailComponent},
-  {path: 'dishes/:id', component: DishDetailComponent},
-  {path: 'ingredient', component: IngredientComponent},
-  {path: 'soundcloud', component: SoundCloudComponent},
-  {path: 'ar', component: ArComponent}
+  {path: '', component: HomeComponent, pathMatch: 'full'},
+  {path: 'search', component: RestaurantComponent, pathMatch: 'full'},
+  {path: 'restaurants/:id', component: RestaurantDetailComponent, pathMatch: 'full'},
+  {path: 'dishes/:id', component: DishDetailComponent, pathMatch: 'full'},
+  {path: 'ingredient', component: IngredientComponent, pathMatch: 'full'},
+  {path: 'soundcloud', component: SoundCloudComponent, pathMatch: 'full'},
+  {path: 'ar', component: ArComponent, pathMatch: 'full'}
 ];
 
 @NgModule({
