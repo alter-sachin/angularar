@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  backendUrl: 'http://crispar.in:1337/'
+  backendUrl: 'https://crispar.in/api/'
 };
