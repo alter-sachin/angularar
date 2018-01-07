@@ -6,8 +6,8 @@
         <div class="col-md-6 col-sm-6 col-xs-6 text-left">
           <a href="#"><img src="../../assets/img/logo.png" alt="Crisp Logo"></a>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-          <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+        <div (click)="toggleMenu()" class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
+          <p >MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
         </div>
       </div>
       <div class="row hero-content">
@@ -40,8 +40,8 @@
             <div class="device-content">
               <div class="showcase-slider">
                 <div class="sketchfab-embed-wrapper">
-                  <iframe width="245" height="445"
-                          src="https://sketchfab.com/models/acf17ee90c0043bd89fa4b635883f665/embed" frameborder="0"
+                  <iframe id="iframe1" width="245" height="445"
+                          frameborder="0"
                           allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
                           onmousewheel=""></iframe>
 
@@ -129,8 +129,7 @@
             <div class="device-content">
               <div class="showcase-slider">
                 <div class="sketchfab-embed-wrapper">
-                  <iframe width="247" height="445"
-                          src="https://sketchfab.com/models/5ef4a0ebf5bd4008976f8ef88c306b3e/embed?autostart=1"
+                  <iframe id="iframe2" width="247" height="445"
                           frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
                           onmousewheel=""></iframe>
 
@@ -211,7 +210,7 @@
     </div>
   </div>
 </footer>
-<div class="overlay overlay-boxify">
+<div id="MenuOverlay" class="overlay overlay-boxify">
   <nav>
     <ul>
       <li><a href="#about"><i class="fa fa-heart"></i>About</a></li>
