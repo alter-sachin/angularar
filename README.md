@@ -26,3 +26,29 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+ng -v 
+
+_                      _                 ____ _     ___
+   / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+  / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+ / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+/_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+               |___/
+@angular/cli: 1.2.6
+node: 6.11.3
+os: linux x64
+@angular/animations: 4.4.5
+@angular/common: 4.4.5
+@angular/compiler: 4.4.5
+@angular/core: 4.4.5
+@angular/forms: 4.4.5
+@angular/http: 4.4.5
+@angular/platform-browser: 4.4.5
+@angular/platform-browser-dynamic: 4.4.5
+@angular/router: 4.4.5
+@angular/cli: 1.2.6
+@angular/compiler-cli: 4.4.5
+@angular/language-service: 4.4.5
+
