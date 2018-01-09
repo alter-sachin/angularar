@@ -10,7 +10,6 @@ import {FormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing.module';
 import {IngredientService} from './ingredient.service';
 import {HttpModule} from '@angular/http';
-import {GeoDataComponent} from './geodata/geodata.component';
 import {UserComponent} from './user/user.component';
 import {UserService} from './user.service';
 import {GeodataService} from './geodata.service';
@@ -36,7 +35,6 @@ import { CartComponent } from './cart/cart.component';
     RestaurantComponent,
     FooditemComponent,
     IngredientComponent,
-    GeoDataComponent,
     UserComponent,
     ArComponent,
     SoundCloudComponent,
