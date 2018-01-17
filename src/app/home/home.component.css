@@ -711,7 +711,7 @@ Features Slider
 Features List
 ========================================================================== */
 .features-list {
-  padding: 130px 0
+  padding: 130px 0 50px 0px;
 }
 .features-list h1 {
   margin: 0 0 10px 0;
@@ -827,7 +827,7 @@ Showcase
 Screenshots Intro
 ========================================================================== */
 .screenshots-intro {
-  padding: 170px 0 100px 0;
+  padding: 10px 0 40px 0;
   background-color: #f6f7f9;
 }
 .screenshots-intro h1 {
@@ -950,8 +950,9 @@ footer {
   padding: 100px 0
 }
 footer p {
-  color: #c7cacc;
-  font-size: 12px;
+  color: #020202;
+  font-size: 14px;
+  font-weight: bolder;
 }
 footer ul {
   margin-top: 30px
@@ -964,7 +965,8 @@ footer li {
   font-weight: 400;
 }
 footer li a {
-  color: #3f6184
+  color: #020202;
+  font-weight: bolder;
 }
 footer li:last-child {
   margin-right: 0
