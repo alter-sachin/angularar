@@ -1,9 +1,16 @@
-/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
+/* ! normalize.css 1.0.0 | MIT License | git.io/normalize */
 
 /* ==========================================================================
 HTML5 display definitions
 ========================================================================== */
 
+
+
+
+.screen1{
+  background-color: #f57c1d;
+  padding:20px;
+}
 /*
 * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
 */
@@ -585,6 +592,40 @@ Hero
   background-size: cover;
   color: #fff;
 }
+.mobile-photo{
+  width:100%;
+  position: relative;
+}
+.mobile-img{
+  width: 300px;
+  margin:auto;
+
+}
+
+@media (min-width:768px){
+  .mobile-device{
+    display: none;
+  }
+
+}
+@media (max-width: 767px) {
+  .hero{
+   min-height: 100vh;
+  }
+  .desktop-view{
+    display: none
+  }
+
+.device-content[_ngcontent-c1] {
+       position: absolute;
+    top: 97px;
+    left: 25px;
+  
+    background: transparent;
+}
+
+
+}
 .hero h1 {
   margin: 100px 0 45px 0;
   font-weight: 300;
@@ -1097,9 +1138,8 @@ Waypoints
 }
 
 @media screen and (max-width:1200px){
-  .device{left:20%;top:-36px;}
-  footer li{margin-right:10%;}
-  .feature-content{width:55%;}
+  .device{left:0%;top:-36px;}
+
 }
 @media screen and (max-width:991px){
   .feature-1,.feature-2{margin-bottom:50px;}
@@ -1124,7 +1164,7 @@ Waypoints
   .screenshots ul li{width:100%;min-height:100%;float:none;}
   section.video i{font-size:30px;}
   section.video h1{font-size:15px;font-weight:400;}
-  section.video{padding:40px;}
+  section.video{padding:20px;}
   .feature-content{width:100%;text-align:center;margin-top:20px;}
   .feature-icon{display:block;margin:0 auto;}
   blockquote p{width:60%;}
@@ -1197,6 +1237,7 @@ body:after {
 .lb-container {
   padding: 4px;
 }
+
 
 .lb-loader {
   position: absolute;
