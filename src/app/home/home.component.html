@@ -7,13 +7,15 @@
           <a href="#"><img src="../../assets/img/logo.png" alt="Crisp Logo"></a>
         </div>
         <div (click)="toggleMenu()" class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-          <p >MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+          <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
         </div>
       </div>
       <div class="row hero-content">
         <div class="col-md-12">
-          <h1 class="animated fadeInDown">Restaurants Just Got An Upgrade<img src="../../assets/img/donut.gif"/></h1>
-          <a href="#about" class="learn-btn animated fadeInUp">Show<i class="fa fa-arrow-down"></i></a>
+          <h1 class="animated fadeInDown text-center">Restaurants Just Got An Upgrade<img src="../../assets/img/donut.gif"/></h1>
+          <div class="text-center">
+            <a href="#about" class="learn-btn animated fadeInUp">Show<i class="fa fa-arrow-down"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -22,37 +24,49 @@
 <section class="video" id="about">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 text-center">
+      <div class="col-md-12 col-sm-12 text-center">
         <h1><a href="https://www.youtube.com/watch?v=9Z2mr6pd3eo" class="youtube-media"><i
           class="fa fa-play-circle-o"></i> See The Video</a></h1>
+      </div>
+      <div class="col-md-12 col-sm-12 text-center mobile-device">
+        <div class="mobile-img wp3 ">
+          <img src="../../assets/img/iphone-skeleton.png" class="mobile-photo">
+          <div class="device-content">
+            <div class="showcase-slider">
+              <div class="sketchfab-embed-wrapper">
+                <iframe width="210" height="372" src="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3/embed?autospin=0.2&amp;autostart=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+                <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                  <a href="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Backyard Barbeque Pizza</a> by <a href="https://sketchfab.com/proghackers8?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">proghackers8</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<app-restaurant></app-restaurant>
+<!-- <app-restaurant></app-restaurant> -->
 <section class="showcase">
   <div class="showcase-wrap">
     <div class="texture-overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-6 desktop-view">
           <div class="device wp3">
             <div class="device-content">
               <div class="showcase-slider">
                 <div class="sketchfab-embed-wrapper">
                   <iframe width="245" height="445" src="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3/embed?autospin=0.2&amp;autostart=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
-
                   <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
-                      <a href="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Backyard Barbeque Pizza</a>
-                      by <a href="https://sketchfab.com/proghackers8?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">proghackers8</a>
-                      on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                    <a href="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Backyard Barbeque Pizza</a> by <a href="https://sketchfab.com/proghackers8?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">proghackers8</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-6">
           <h1>See AR Dishes</h1>
           <p>Crispar Makes Your Dishes Appear Right In Front Of You</p>
           <h1>Dish Level Richness</h1>
@@ -60,10 +74,10 @@
           <h1>Showcase Your Best</h1>
           <p>Make Your Tongue Tingle with Visual Storytelling. </p>
           <blockquote class="team-quote">
-                <div class="avatar"><img src="../../assets/img/avatar.png" alt="User Avatar"></div>
-                <p>"What The F*** Just Happened On My Restaurant Table?"</p>
-                <div class="logo-quote">
-                </div>
+            <div class="avatar"><img src="../../assets/img/avatar.png" alt="User Avatar"></div>
+            <p>"What The F*** Just Happened On My Restaurant Table?"</p>
+            <div class="logo-quote">
+            </div>
           </blockquote>
           <!--<a href="#features" class="learn-btn animated fadeInUp">More Magic<i class="fa fa-arrow-down"></i></a>-->
         </div>
@@ -71,20 +85,18 @@
     </div>
   </div>
 </section>
-
 <section class="features-list" id="features">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-
         <div class="col-md-4 feature-1 wp2">
-            <div class="feature-icon">
-              <i class="fa fa-desktop"></i>
-            </div>
-            <div class="feature-content">
-              <h1>Know Thy Customer</h1>
-              <p>Dish Level Engagement Means You Know What Customers Love.</p>
-            </div>
+          <div class="feature-icon">
+            <i class="fa fa-desktop"></i>
+          </div>
+          <div class="feature-content">
+            <h1>Know Thy Customer</h1>
+            <p>Dish Level Engagement Means You Know What Customers Love.</p>
+          </div>
         </div>
         <div class="col-md-4 feature-2 wp2 delay-05s">
           <div class="feature-icon">
@@ -92,7 +104,7 @@
           </div>
           <div class="feature-content">
             <h1>Magical Experience</h1>
-              <p>Wow Customers. Differentiate From The Crowd.</p>
+            <p>Wow Customers. Differentiate From The Crowd.</p>
           </div>
         </div>
         <div class="col-md-4 feature-3 wp2 delay-1s">
@@ -104,9 +116,8 @@
             <p>What You See Is What You Get. </p>
           </div>
         </div>
-
-        </div>
       </div>
+    </div>
   </div>
 </section>
 <!--<section class="showcase">
@@ -158,7 +169,6 @@
     </div>
   </div>
 </section>-->
-
 <section class="screenshots-intro">
   <div class="container">
     <div class="row">
@@ -170,7 +180,6 @@
     </div>
   </div>
 </section>
-
 <section class="download" id="download">
   <div class="container">
     <div class="row">
